@@ -11,8 +11,7 @@ function playGame(playerChoice) {
 
     // Determine the winner
     const result = determineWinner(playerChoice, computerChoice);
-    console.log("Result: ", result); // Debugging line
-    updateScores(result);
+   
 
     // Update the game result display
     document.getElementById("gameResult").textContent = result;
@@ -44,17 +43,15 @@ function determineWinner(playerChoice, computerChoice) {
         return "Player Wins!";
     } else {
         computerScore++; // Correctly increment the computer's score
-        console.log("Computer Score Updated: ", computerScore); // Debugging line
-        return "Computer Wins!";
+        
     }
 }
 
 // Function to update scores
 function updateScores(result) {
     // Update DOM elements, ensuring proper number is displayed
-    document.getElementById("playerScore").textContent = playerScore;
+    document.getElementById("playerScore").textContent = playScore;
     document.getElementById("computerScore").textContent = computerScore;
 
-    console.log("Player Score Display: ", document.getElementById("playerScore").textContent); // Debugging line
-    console.log("Computer Score Display: ", document.getElementById("computerScore").textContent); // Debugging line
+    
 }
