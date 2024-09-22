@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" class="icon" href="images/game.png" type="image/x-icon"/>
+</head>
+<body>
+
+     <header class="container"> 
+        <div class="header">
+        <p>&copy; 2024 <a href="#">Gatwiri Kimathi</a></p>
+        <div class="results">
+           <p>Computer: <span id="computerScore">0</span></p> 
+           <p>Player: <span id="playerScore">0</span></p>
+        </div>
+        </div>
+
+        <div id="computerDisplay" class="computer-pick">
+            <h3>Computer</h3>
+            <span id="computerChoice" style="font-size:80px;">&#9995;</span>
+        </div>
+
+        <div class="yellow-line">
+            <h3  id ="gameResult">CURRENTLY A DRAW</h3>
+        </div>
+
+        <div id="playerDisplay" class="player-pick">
+            <h3>Player</h3>
+            <span id="playerChoice" style="font-size:80px;">&#9995;</span>
+        </div>
+
+        <div class="option-list" id="choices">
+            <div class="choose-one">
+                <button class="emoji-selection" onclick="playGame('rock')">
+                    <span  style="font-size:60px;" class="emoji">&#9994;</span>
+                    <h2>Rock</h2>
+                </button>
+            </div>
+            <div class="choose-one">
+                <button class="emoji-selection" onclick="playGame('paper')">
+                    <span style="font-size:60px;" class="emoji">&#9995;</span>
+                    <h2>Paper</h2>
+                </button>
+            </div>
+            <div class="choose-one">
+                <button class="emoji-selection" onclick="playGame('scissors')">
+                    <span style="font-size:60px;" class="emoji">&#9996;</span>
+                    <h2>Scissors</h2>
+                </button>
+            </div>
+        </div>
+    </header>
+    <script src="app.js"></script>
+</body>
+</html>

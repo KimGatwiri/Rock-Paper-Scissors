@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    padding: 0;
+    border-top-left-radius: 0;
+    
+}
+body{
+ display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   background-color: #d3d3d3; 
+   margin: 0;
+   overflow: hidden;
+   font-family: "Press Start 2P", system-ui;
+   font-size: 10px;
+}
+
+.container{
+    width: 700px; /* Set the width */
+    height: 751px; /* Set the height */
+     background-color: #9ec91e; /* Set the background color */
+    /* padding: 30px; */
+}
+/* @media screen and (max-width:40px) {
+    .header{
+       background-color: #9ec91e;
+    }
+    
+}  */
+    
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media screen and (max-width:849px) {
+    .header{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-left: 90px;
+    }
+    
+} 
+    
+
+.results{
+    display: flex;
+    gap: 80px;
+    justify-content: end;
+}
+@media screen and (max-width:405px) {
+    .results{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+    
+}.players{
+    font-size:17px ;
+}
+ .computer-pick{
+    display: block;
+    justify-content: center;
+    align-items:center ; 
+    padding-top: 10px;
+   padding-bottom: 10px;
+  
+   text-align: center;
+   
+ }
+
+ .computer-image{
+    height: 77px;
+    width: 78px;
+    /* padding-left: 30; */
+    border: black dotted;
+    background-color: white;
+
+    
+
+}
+.yellow-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 80px;
+    background-color:#f2c244;
+    
+}
+
+  @media only screen and (max-width: 571px) {
+    #gameResult {
+      font-size: 16px;
+    }
+  }
+  
+  
+.player-pick{
+    display: block;
+    align-items: center;
+    /* padding-top: 20px; */
+    text-align: center;
+    
+    
+}
+.option-list{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+@media screen and (max-width:559px) {
+    .option-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+@media screen and (max-width:501px) {
+    .option-list{
+        padding-right: 40px;
+        padding-bottom: 40px;
+        padding-left: 70px;
+    }
+    @media screen and (max-width:431px) {
+        .option-list{
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+    }
+    /* @media screen and (max-width:373px) {
+        .option-list{
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+} */
+.pick-image{
+    height: 77px;
+    width: 78px;
+}
+ .choose-one{
+    border-radius: 40%;
+ }
+.emoji-selection{
+    border-radius: 10%;
+    border-style: none;
+    width: 110px;
+}
+#playerChoice, #computerChoice{
+    border-style:dotted;
+    display: inline-block;
+    
+}
+#gameResult{
+    font-size: 27px;
+}
+.icon{
+    background :#d3d3d3
+
+}
+}
